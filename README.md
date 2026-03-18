@@ -26,3 +26,5 @@ gradio部署：
 训练指标查看：
 请执行：`tensorboard --logdir logs/self_v2 --bind_all --port 0`
 # 指标记录：
+
+![First Stage](imgs/first_stage_profit.png)
