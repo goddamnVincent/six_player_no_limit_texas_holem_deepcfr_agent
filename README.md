@@ -26,5 +26,12 @@ gradio部署：
 训练指标查看：
 请执行：`tensorboard --logdir logs/self_v2 --bind_all --port 0`
 # 指标记录：
-
-![First Stage](imgs/first_stage_profit.png)
+第一阶段的损失，看上去在慢慢收敛。
+![First Stage Loss](imgs/first_stage_loss.png)
+第二阶段的损失，看上去在震荡，不过也正常，二阶段是纯强化学习。
+![Second Stage Loss](imgs/second_stage_loss.png)
+第一阶段的对局平均获利即每一手赢多少钱，随着训练的进行，最终也是水上。
+![First Stage Profit](imgs/first_stage_Profit.png)
+第二阶段的对局平均获利。
+![Second Stage Profit](imgs/second_stage_profit.png)
+不同street raise的频率以及各个挡位选择的频率
