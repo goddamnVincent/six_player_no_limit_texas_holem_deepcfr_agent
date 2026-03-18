@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>德州扑克</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>德州扑克</h1>
+
+        <div class="game-controls">
+            <button id="newGameBtn">新游戏</button>
+            <button id="resetGameBtn">重置游戏</button>
+        </div>
+
+        <div class="game-info">
+            <div id="gameStatus">等待游戏开始...</div>
+            <div id="currentPlayer"></div>
+            <div id="potSize"></div>
+        </div>
+
+        <div class="game-board">
+            <div class="community-cards" id="communityCards">
+                <h3>公共牌</h3>
+                <div class="cards-container"></div>
+            </div>
+
+            <div class="players-container">
+                <div class="player" id="player1">
+                    <h3>玩家1 (你)</h3>
+                    <div class="cards-container"></div>
+                    <div class="player-chips">筹码: <span>1000</span></div>
+                    <div class="player-bet">下注: <span>0</span></div>
+                </div>
+
+                <div class="player" id="player2">
+                    <h3>玩家2 (AI)</h3>
+                    <div class="cards-container"></div>
+                    <div class="player-chips">筹码: <span>1000</span></div>
+                    <div class="player-bet">下注: <span>0</span></div>
+                </div>
+
+                <div class="player" id="player3">
+                    <h3>玩家3 (AI)</h3>
+                    <div class="cards-container"></div>
+                    <div class="player-chips">筹码: <span>1000</span></div>
+                    <div class="player-bet">下注: <span>0</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons" id="actionButtons">
+            <button class="action-btn" data-action="fold">弃牌</button>
+            <button class="action-btn" data-action="call">跟注</button>
+            <button class="action-btn" data-action="raise">加注</button>
+            <button class="action-btn" data-action="check">看牌</button>
+            <div class="raise-controls" id="raiseControls">
+                <input type="number" id="raiseAmount" min="10" value="50">
+                <button id="confirmRaise">确认加注</button>
+            </div>
+        </div>
+
+        <div class="game-log" id="gameLog">
+            <h3>游戏日志</h3>
+            <div class="log-entries"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
