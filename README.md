@@ -15,16 +15,26 @@ a six-player Texas Hold'em poker agent based on DeepCFR
 - 魔改点6：关于loss。优势网络因为需要预测后悔值的缘故，经常使用mse_loss作为损失函数。但是实际上而言有点粗糙，方差有点太大。这里为了稳妥起见，我用了huber_loss。同时第二阶段不要使用学习率衰减。
 - 魔改点7：就是一些小trick，例如经验回放的权重设计、防止logits=0时候被分走概率、huber_delta调参等等...
 # 项目体验以及部署
-首先 `pip install -r requirements.txt`，重要的事情说三遍必须是python3.11.
+首先
+
+`pip install -r requirements.txt`
+
+，重要的事情说三遍必须是python3.11.
 cd进根目录
 安装pokers环境：
+
 `pip install pokers-0.1.2-cp311-cp311-manylinux_2_28_x86_64.whl`
+
 pokers是rust编写的德州第三方库，但是有一些bug。我修复过后重新进行了编译，所以直接安装我给你的就行了。
 gradio部署：
+
 请执行： `python -m scripts.gradio --port ****`  默认是8800
+
 然后在你本地浏览器打开就可以体验了。
 训练指标查看：
+
 请执行：`tensorboard --logdir logs/self_v2 --bind_all --port 0`
+
 # 指标记录：
 第一阶段的损失，看上去在慢慢收敛。
 ![First Stage Loss](imgs/first_stage_loss.png)
