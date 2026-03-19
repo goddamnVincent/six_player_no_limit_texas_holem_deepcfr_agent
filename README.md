@@ -35,3 +35,15 @@ gradio部署：
 第二阶段的对局平均获利。
 ![Second Stage Profit](imgs/second_stage_profit.png)
 不同street raise的频率以及各个挡位选择的频率
+![Raise Frequency](imgs/raise_frequency.png)
+不同street fold的频率
+![Fold Frequency](imgs/fold_frequency.png)
+不同iteration的traverse时间
+![Traverse Time](imgs/traverse_time.png)
+不同动作的选择频率
+![Actions Frequency](imgs/action_frequency.png)
+一些模型参数的监控情况
+![Model parameters](imgs/model_parameters.png)
+# 部署界面：
+自己做了一个ui界面：
+![Model parameters](imgs/model_parameters.png)
