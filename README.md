@@ -46,4 +46,4 @@ gradio部署：
 ![Model parameters](imgs/model_parameters.png)
 # 部署界面：
 自己做了一个ui界面：
-![Model parameters](imgs/model_parameters.png)
+![Gradio](imgs/gradio.png)
