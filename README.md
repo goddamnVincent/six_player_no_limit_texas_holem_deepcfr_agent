@@ -41,7 +41,7 @@ gradio部署：
 不同iteration的traverse时间
 ![Traverse Time](imgs/traverse_time.png)
 不同动作的选择频率
-![Actions Frequency](imgs/action_frequency.png)
+![Actions Frequency](imgs/actions_frequency.png)
 一些模型参数的监控情况
 ![Model parameters](imgs/model_parameters.png)
 # 部署界面：
