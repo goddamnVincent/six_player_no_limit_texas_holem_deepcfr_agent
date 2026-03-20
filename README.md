@@ -61,6 +61,8 @@ gradio部署：
 # 待完善点：
 - 训练时间不够，即迭代次数不够，德州的牌面情况太太太多了，导致iteration不是特别充足的情况下，策略并不能完全覆盖。
 - 关于all-in的问题，模型在最后总是喜欢all-in，貌似all-in带来的收益导致最后的后悔值出现了极端值。关于这一点，我在推理的时候使用mcts进行了修正。请看`src/core/model_clean_model_input.py`中的choose_action环节。这一点应该是可以通过学习来改善的，或许需要对all-in的logits加一项惩罚，或者对all-in的后悔值进行修正，后面可以试试。
+- PPO和deepcfr进行融合。
+- 特征编码不再是独热编码，使用类似CNN之类的特征试试
 
 # 鸣谢：
 https://github.com/dberweger2017/deepcfr-texas-no-limit-holdem-6-players
